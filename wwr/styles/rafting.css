@@ -59,7 +59,7 @@ section {
     object-fit: cover;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -67,10 +67,10 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--accent2-color);
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 20px;
     width: 95%;
@@ -83,7 +83,7 @@ article {
 }
 
 .hero article img {
-    float: left;
+    float: right;
     width: 125px;
     border: #fff;
     box-shadow: 0 0 30px #fff;
