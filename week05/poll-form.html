@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form>
+            <div class="form-item column2">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-item column2">
+                <label for="usermail">Email Address:</label>
+                <input type="text" id="usermail" name="usermail" required>
+            </div>
+
+            <div class="form-item column1">
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="1">Chrome</option>
+                    <option value="2">Mozilla Firefox</option>
+                    <option value="3">Safari</option>
+                    <option value="4">Edge</option>
+                </select>
+            </div>
+
+            <div class="form-item column1">
+                <label><input type="checkbox" id="pet" name="pet"> Do you have a pet? Check if
+                    yes.</label>
+            </div>
+
+            <label for="feedback">List the places you have lived.</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Tucson, Az"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
