@@ -25,6 +25,12 @@ body {
     color: var(--accent1-color);
 }
 
+main {
+    max-width: 500px;
+    background-color: #000;
+    color: #fff;
+}
+
 header img {
     margin: 1rem auto;
 }
@@ -179,4 +185,22 @@ footer p {
     align-self: center;
     justify-self: center;
     margin: 0;
+}
+
+article img {
+    max-width: 150px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rbg(140 140 140);
+    letter-spacing: 1px;
+    justify-content: space-between;
+}
+
+tr {
+    border: 1px solid rgb(150 150 150);
+    padding: 8px 12px;
+    text-align: center;
+    justify-content: space-between;
 }
