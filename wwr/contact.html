@@ -4,101 +4,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title> Contact Us | Radical Rapids | George Adams | WDD 130 | Week 5 | White Water Rafting
-    </title>
-    <meta name="description"
-      content="WDD130 Week 5 Project - building a contact us page on your own using what you've learned.">
-    <meta name="author" content="George Adams">
+    <title>Radical Rapids | Contact Us</title>
 </head>
 
 <body>
-    <div>
+    <div id="content">
         <header>
-            <img class="logo" src="images/z-rapids-trees.jpg" alt="Radical Rapids Logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/z-rapids-trees.jpg" alt="Radical RapidsLogo">
+            </a>
+            <nav> 
+                <a href="index.html">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
-
-        <main>
-            <div id="feedback"></div>
-            <h1>Contact Us</h1>
-            <p>Radical Rapids</p>
-            <p>Phone: (999) 999-9999</p>
-            <p>Fax: What is this, the 80's?</p>
-            <p>E-Mail: contactsupport@radicalrapids.com</p>
-            <div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13059.014898282516!2d-71.96106250149903!3d-13.32111622391074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1770059891095!5m2!1sen!2sus"
-                  width="600" height="450" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="faq-hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero_transparency_1024.png" alt="Lazy River">
             </div>
-            <h2>Send Us a Message</h2>
-
-
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email Address:</label>
-                <input type="text" id="email" name="email">
-                <p>What is the purpose of your message?</p>
-                <input type="radio" id="gen" name="radio">
-                <label for="gen">General Inquiry</label>
-                <input type="radio" id="rez" name="radio">
-                <label for="rez">Reservation Questions</label>
-                <input type="radio" id="web" name="radio">
-                <label for="web">Website Suggestion</label>
-                <label for="message">Enter Your Message Here:</label>
-                <textarea id="message" name="message"></textarea>
-                <input type="checkbox" id="news" name="news">
-                <label for="news">Please Subscribe me to the Monthly Newsletter!</label>
-                <button type="submit">Submit My Radical Message</button>
-            </form>
-
-            <article>
-                <table>
-                    <tr>
-                        <th>"It's a blast working with us!"</th>
-                        <th>"Let us celebrate your achievements!"</th>
-                        <th>"Radical positivity is our specialty!"</th>
-                    </tr>
-                    <tr>
-                        <img src="images/employee1.jpg" alt="employee1">
-                        <img src="images/employee2.jpg" alt="employee2">
-                        <img src="images/employee3.jpg" alt="employee3">
-                    </tr>
-
-                </table>
-
-            </article>
-
+            <section id="faq-hero-msg">
+                <h1>Contact Us</h1>
+            </section>
+        </div>
+        <main id="contact">
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <h1 style="text-align: center;">Contact form</h1>
+                <p style="text-align: center; font-size: .7em;">
+                Required fields are followed by
+                <strong><span aria-label="required">*</span></strong>.
+                </p>
+                <ul>
+                  <li>
+                    <label for="name">Name: <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="user_name" value="" />
+                  </li>
+                  <li>
+                    <label for="email">Email: <span aria-label="required">*</span></label>
+                    <input type="email" id="mail" name="user_email" value=""/>
+                  </li>
+                  <li>
+                    <label for="msg">Message: <span aria-label="required">*</span></label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button" type="submit">
+                    <button class="contact-button" type="submit">Send your message</button>
+                  </li>
+                </ul>
+              </form>     
         </main>
 
         <footer>
-            <div>
-                <p>©2026 | Radical Rapids | George Adams</p>
-                <nav class="socialmedia">
-                    <a href="https://facebook.com">
-                        <img src="images/facebook-square.svg" alt="Facebook Icon" width="100">
-                    </a>
-                    <a href="https://linkedin.com">
-                        <img src="images/linkedin-square.svg" alt="LinkedIn Icon" width="100">
-                    </a>
-                    <a href="https://instagram.com">
-                        <img src="images/instagram-square.svg" alt="Instagram Icon" width="100">
-                    </a>
-                </nav>
+            <p>Radical Rapids &copy; 2026 - George Adams</p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="faq.html">FAQ</a></p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook-square.svg" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram-square.svg" alt="instagram icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin-square.svg" alt="instagram icon">
+                </a>
+            </div>
         </footer>
     </div>
-</body>
 
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+
+
+
+
+</body>
 
 </html>
